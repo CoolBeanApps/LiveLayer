@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LiveLayer</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header>
+      <div class="mark">LL</div>
+      <div><h1>LiveLayer</h1><p>Sports overlays for any video page</p></div>
+    </header>
+    <main>
+      <label class="toggle"><span>Enable on this tab only</span><input id="enabled" type="checkbox"><i></i></label>
+      <button id="open" class="primary">Open overlay controls</button>
+      <p id="status" aria-live="polite"></p>
+      <section class="settings">
+        <div class="section-head"><div><h2>Global appearance</h2><p>Defaults for LiveLayer and new widgets</p></div><button id="reset" class="text-button" type="button">Reset</button></div>
+        <div class="color-grid">
+          <label><span>App accent</span><input id="accentColor" type="color"></label>
+          <label><span>Widget text</span><input id="textColor" type="color"></label>
+        </div>
+        <label class="field"><span>Default font</span><select id="fontFamily">
+          <option value="Inter, ui-sans-serif, system-ui, sans-serif">Inter / system</option>
+          <option value="Arial, Helvetica, sans-serif">Arial</option>
+          <option value="Roboto, Arial, sans-serif">Roboto</option>
+          <option value="Montserrat, Arial, sans-serif">Montserrat</option>
+          <option value="Georgia, serif">Georgia</option>
+          <option value="ui-monospace, SFMono-Regular, Consolas, monospace">Monospace</option>
+        </select></label>
+        <label class="field range-field"><span>Default background <b id="backgroundOpacityLabel">0%</b></span><input id="backgroundOpacity" type="range" min="0" max="90" step="5"></label>
+        <label class="field range-field"><span>Arrange grid <b id="gridOpacityLabel">10%</b></span><input id="gridOpacity" type="range" min="0" max="30" step="5"></label>
+        <label class="field"><span>Default number color</span><select id="numberColorMode">
+          <option value="inherit">Match widget text</option>
+          <option value="solid">One color</option>
+          <option value="spectrum">Spectrum toward target</option>
+          <option value="threshold">Switch color at target</option>
+        </select></label>
+        <div class="color-grid number-colors">
+          <label><span>Solid</span><input id="solidColor" type="color"></label>
+          <label><span>Far away</span><input id="farColor" type="color"></label>
+          <label><span>Near target</span><input id="nearColor" type="color"></label>
+          <label><span>Target reached</span><input id="reachedColor" type="color"></label>
+        </div>
+      </section>
+      <div class="help"><strong>Shortcuts</strong><span>Alt + Shift + L: controls</span><span>Alt + Shift + O: hide/show</span></div>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

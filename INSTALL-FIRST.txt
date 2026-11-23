@@ -1,0 +1,11 @@
+BRAVE INSTALLATION
+
+1. Unzip LiveLayer-Sports-Overlay.zip.
+2. Open brave://extensions in Brave.
+3. Turn on Developer mode.
+4. Click Load unpacked.
+5. Select the extracted folder that directly contains manifest.json.
+
+Do not select a parent folder above manifest.json, and do not select the ZIP file itself.
+
+For Chrome, use chrome://extensions and follow the same steps.
