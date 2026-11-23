@@ -184,6 +184,3 @@ npm test
 ```
 
 The extension uses plain JavaScript and has no build step.
-# Jellyfin360
-# Jellyfin360
-# LiveLayer
